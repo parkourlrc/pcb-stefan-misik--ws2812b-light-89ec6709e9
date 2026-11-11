@@ -15,6 +15,7 @@
 #include "app/music.hpp"
 #include "app/led_strip_modifier.hpp"
 #include "app/logger.hpp"
+#include "app/records.hpp"
 
 
 /**
@@ -69,6 +70,8 @@ private:
     Music music_;
 
     LedStripModifier modifier_;
+
+    Records records_;
 
     void handleEvents();
     Music::Result handleMusic();
